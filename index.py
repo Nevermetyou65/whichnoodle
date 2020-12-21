@@ -4,9 +4,6 @@ import dash_html_components as html
 from pages import price, energy, density, relation, sodium, home, summary
 from app import app
 
-
-
-
 app.layout = html.Div([
     home.layout,
     price.layout,
