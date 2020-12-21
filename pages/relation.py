@@ -1,8 +1,5 @@
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Output, Input
-from app import app
-
 from charts.relaplot import fig
 from charts.relaplothilight import fig_hi
 
@@ -47,14 +44,14 @@ layout = html.Div([
 
 ], id='relation')
 
-@app.callback(
-    Output('relation-plot', 'figure'),
-    Input('radio-item', 'value')
-)
-def display_chart(value):
-    if value == 'normal':
-        return fig
-    else:
-        return fig_hi
+# @app.callback(
+#     Output('relation-plot', 'figure'),
+#     Input('radio-item', 'value')
+# )
+# def display_chart(value):
+#     if value == 'normal':
+#         return fig
+#     else:
+#         return fig_hi
 
 
