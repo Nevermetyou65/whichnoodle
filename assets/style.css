@@ -1,0 +1,67 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+}
+
+.fig-center {
+    display: flex;
+    justify-content: center;
+}
+
+.item-center {
+    display: flex;
+    justify-content: center;
+}
+
+.top-text, .bottom-text {
+    text-align: center;
+
+}
+
+.choice {
+    text-align: center;
+}
+
+
+#home {
+    padding: 160px 0;
+    font-size: xx-large;
+    
+}
+
+#price {
+    padding: 120px 0;
+}
+
+#energy {
+    padding: 120px 0;
+}
+
+#density {
+    padding: 120px 0;
+}
+
+#relation {
+    padding: 120px 0;
+}
+
+#summary {
+    padding: 200px 0;
+}
+
+#radio-item {
+    font-size: large;
+
+}
+#demo-dropdown {
+    width: 50%;
+}
+
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+
+
+
