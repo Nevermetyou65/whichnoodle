@@ -18,7 +18,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[0],
-        hovertext=f'{noodle_df.index[0]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[0]}',
+        hovertext=f'{noodle_df.index[0]} {noodle_df.ความคุ้ม.iloc[0]} kcal/1บาท',
         hoverinfo='text'
         
     )
@@ -35,7 +35,7 @@ fig.add_traces(
             opacity=0.5
         ),
         name=noodle_df.index[1],
-        hovertext=f'{noodle_df.index[1]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[1]}',
+        hovertext=f'{noodle_df.index[1]} {noodle_df.ความคุ้ม.iloc[1]} kcal/1บาท',
         hoverinfo='text'
     )
 )
@@ -50,7 +50,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[2],
-        hovertext=f'{noodle_df.index[2]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[2]}',
+        hovertext=f'{noodle_df.index[2]} {noodle_df.ความคุ้ม.iloc[2]} kcal/1บาท',
         hoverinfo='text'
     )
 )
@@ -65,7 +65,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[3],
-        hovertext=f'{noodle_df.index[3]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[3]}',
+        hovertext=f'{noodle_df.index[3]} {noodle_df.ความคุ้ม.iloc[3]} kcal/1บาท',
         hoverinfo='text'
     )
 )
@@ -80,7 +80,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[4],
-        hovertext=f'{noodle_df.index[4]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[4]}',
+        hovertext=f'{noodle_df.index[4]} {noodle_df.ความคุ้ม.iloc[4]} kcal/1บาท',
         hoverinfo='text'
     )
 )
@@ -95,7 +95,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[5],
-        hovertext=f'{noodle_df.index[5]} ค่าความคุ้ม {noodle_df.ความคุ้ม.iloc[5]}',
+        hovertext=f'{noodle_df.index[5]} {noodle_df.ความคุ้ม.iloc[5]} kcal/1บาท',
         hoverinfo='text'
     )
 )

@@ -17,7 +17,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[0],
-        hovertext=f'{noodle_df.index[0]} ราคา {noodle_df.ราคา.iloc[0]}',
+        hovertext=f'{noodle_df.index[0]} {noodle_df.ราคา.iloc[0]} บาท',
         hoverinfo='text'
         
     )
@@ -34,7 +34,7 @@ fig.add_traces(
             opacity=0.5
         ),
         name=noodle_df.index[1],
-        hovertext=f'{noodle_df.index[1]} ราคา {noodle_df.ราคา.iloc[1]}',
+        hovertext=f'{noodle_df.index[1]} {noodle_df.ราคา.iloc[1]} บาท',
         hoverinfo='text'
     )
 )
@@ -49,7 +49,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[2],
-        hovertext=f'{noodle_df.index[2]} ราคา {noodle_df.ราคา.iloc[2]}',
+        hovertext=f'{noodle_df.index[2]} {noodle_df.ราคา.iloc[2]} บาท',
         hoverinfo='text'
     )
 )
@@ -64,7 +64,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[3],
-        hovertext=f'{noodle_df.index[3]} ราคา {noodle_df.ราคา.iloc[3]}',
+        hovertext=f'{noodle_df.index[3]} {noodle_df.ราคา.iloc[3]} บาท',
         hoverinfo='text'
     )
 )
@@ -79,7 +79,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[4],
-        hovertext=f'{noodle_df.index[4]} ราคา {noodle_df.ราคา.iloc[4]}',
+        hovertext=f'{noodle_df.index[4]} {noodle_df.ราคา.iloc[4]} บาท',
         hoverinfo='text'
     )
 )
@@ -94,7 +94,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[5],
-        hovertext=f'{noodle_df.index[5]} ราคา {noodle_df.ราคา.iloc[5]}',
+        hovertext=f'{noodle_df.index[5]} {noodle_df.ราคา.iloc[5]} บาท',
         hoverinfo='text'
     )
 )

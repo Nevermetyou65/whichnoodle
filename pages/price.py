@@ -1,12 +1,11 @@
 import dash_core_components as dcc
 import dash_html_components as html
-#from dash.dependencies import Input, Output
 from charts.bar_pri import fig
 
 layout = html.Div([
     
     html.Div([
-        html.H2('ถ้างั้นมาเริ่มจาก "อันไหนถูดสุดนะ?" ลองดู chart ก็จะเห็นว่า...'),
+        html.H2('ถ้างั้นมาเริ่มจาก "อันไหนถูกสุดนะ?" ลองดู chart ก็จะเห็นว่า...'),
         html.H4('(ลองเอา mouse ไปวงบนวงกลมดู..)')
     ],
         className='top-text'

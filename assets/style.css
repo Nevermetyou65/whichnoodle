@@ -24,11 +24,18 @@
 
 
 #home {
-    padding: 160px 0;
-    font-size: xx-large;
-    
+    /*padding: 160px 0;
+    font-size: xx-large;*/
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 300px;
+    font-size: xx-large; 
 }
-
+#preface {
+    text-align:center;
+    padding: 220px 0;
+    font-size: xx-large;
+}
 #price {
     padding: 120px 0;
 }
@@ -61,6 +68,19 @@
 * {
     scroll-behavior: smooth !important;
 }
+
+#ending {
+    padding: 120px 0;
+}
+
+#joke {
+    padding: 280px 0;
+    text-align: center;
+    font-size: xx-large;
+    
+}
+
+
 
 
 

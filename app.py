@@ -1,14 +1,4 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Output, Input
-
-from pages import price, energy, density, relation, sodium, home, summary
-from charts.relaplot import fig
-from charts.relaplothilight import fig_hi
-
-
-
 
 external_stylesheets = [
     # 'https://codepen.io/chriddyp/pen/bWLwgP.css',
@@ -39,61 +29,3 @@ app = dash.Dash(
         {"name": "viewport", "content": "width=device-width, initial-scale=1"}
     ],
 )
-server = app.server
-app.layout = html.Div([
-    home.layout,
-    price.layout,
-    energy.layout,
-    density.layout,
-    relation.layout,
-    sodium.layout,
-    summary.layout
-])
-
-@app.callback(
-    Output('relation-plot', 'figure'),
-    Input('radio-item', 'value')
-)
-def display_chart(value):
-    if value == 'normal':
-        return fig
-    else:
-        return fig_hi
-
-@app.callback(
-    Output('img-container', 'children'),
-    Input('radio-item2', 'value')
-)
-def display_img(value):
-    if value == 1:
-        return [
-            html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png'))
-        ]
-    elif value == 2:
-        return [
-            html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png'))
-        ]
-    elif value == 3:
-        return [
-            html.Div([
-                html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png')),
-                html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png')),
-                html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
-            ],
-                className='img-group'
-            )
-        ]
-    elif value == 4:
-        return [
-            html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
-        ]
-    else:
-        return [
-            html.Img(src=app.get_asset_url('ซื่อสัตย์ต้มยำกุ้ง.png'))
-        ]
-
-
-
-
-if __name__ == '__main__':
-    app.run_server(debug=True)

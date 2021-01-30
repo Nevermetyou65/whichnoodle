@@ -1,9 +1,7 @@
 import dash_core_components as dcc
 import dash_html_components as html
-
-
-
-
+from dash.dependencies import Input, Output
+from app import app
 
 layout = html.Div([
     html.Div([
@@ -41,35 +39,35 @@ layout = html.Div([
     id='summary'
 )
 
-# @app.callback(
-#     Output('img-container', 'children'),
-#     Input('radio-item2', 'value')
-# )
-# def display_img(value):
-#     if value == 1:
-#         return [
-#             html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png'))
-#         ]
-#     elif value == 2:
-#         return [
-#             html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png'))
-#         ]
-#     elif value == 3:
-#         return [
-#             html.Div([
-#                 html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png')),
-#                 html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png')),
-#                 html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
-#             ],
-#                 className='img-group'
-#             )
-#         ]
-#     elif value == 4:
-#         return [
-#             html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
-#         ]
-#     else:
-#         return [
-#             html.Img(src=app.get_asset_url('ซื่อสัตย์ต้มยำกุ้ง.png'))
-#         ]
+@app.callback(
+    Output('img-container', 'children'),
+    Input('radio-item2', 'value')
+)
+def display_img(value):
+    if value == 1:
+        return [
+            html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png'))
+        ]
+    elif value == 2:
+        return [
+            html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png'))
+        ]
+    elif value == 3:
+        return [
+            html.Div([
+                html.Img(src=app.get_asset_url('ยำยำต้มยำกุ้ง.png')),
+                html.Img(src=app.get_asset_url('ควิกต้มยำกุ้ง.png')),
+                html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
+            ],
+                className='img-group'
+            )
+        ]
+    elif value == 4:
+        return [
+            html.Img(src=app.get_asset_url('มาม่าต้มยำกุ้ง.png'))
+        ]
+    else:
+        return [
+            html.Img(src=app.get_asset_url('ซื่อสัตย์ต้มยำกุ้ง.png'))
+        ]
 

@@ -46,8 +46,8 @@ fig_hi.update_xaxes(
     showline=False
 )
 fig_hi.update_layout(
-    xaxis_title="ความหนาแน่นของเส้น (กรัม/ลบ.ซม)",
-    yaxis_title="ค่าความคุ้ม (พลังงานที่ได้เป็น kcal / 1บาทที่จ่าย)",
+    xaxis_title="ความหนาแน่นเส้น (กรัม / ลบ.ซม.)",
+    yaxis_title="ความคุ้ม (kcal / 1บาท)",
     template='simple_white',
     
 )

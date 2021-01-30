@@ -18,7 +18,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[0],
-        hovertext=f'{noodle_df.index[0]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[0]}',
+        hovertext=f'{noodle_df.index[0]} {noodle_df.เส้นแน่น.iloc[0]} กรัม/ลบ.ซม.',
         hoverinfo='text'
         
     )
@@ -35,7 +35,7 @@ fig.add_traces(
             opacity=0.5
         ),
         name=noodle_df.index[1],
-        hovertext=f'{noodle_df.index[1]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[1]}',
+        hovertext=f'{noodle_df.index[1]} {noodle_df.เส้นแน่น.iloc[1]} กรัม/ลบ.ซม.',
         hoverinfo='text'
     )
 )
@@ -50,7 +50,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[2],
-        hovertext=f'{noodle_df.index[2]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[2]}',
+        hovertext=f'{noodle_df.index[2]} {noodle_df.เส้นแน่น.iloc[2]} กรัม/ลบ.ซม.',
         hoverinfo='text'
     )
 )
@@ -65,7 +65,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[3],
-        hovertext=f'{noodle_df.index[3]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[3]}',
+        hovertext=f'{noodle_df.index[3]} {noodle_df.เส้นแน่น.iloc[3]} กรัม/ลบ.ซม.',
         hoverinfo='text'
     )
 )
@@ -80,7 +80,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[4],
-        hovertext=f'{noodle_df.index[4]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[4]}',
+        hovertext=f'{noodle_df.index[4]} {noodle_df.เส้นแน่น.iloc[4]} กรัม/ลบ.ซม',
         hoverinfo='text'
     )
 )
@@ -95,7 +95,7 @@ fig.add_traces(
             size=15
         ),
         name=noodle_df.index[5],
-        hovertext=f'{noodle_df.index[5]} ความหนาแน่นเส้น {noodle_df.เส้นแน่น.iloc[5]}',
+        hovertext=f'{noodle_df.index[5]} {noodle_df.เส้นแน่น.iloc[5]} กรัม/ลบ.ซม.',
         hoverinfo='text'
     )
 )
